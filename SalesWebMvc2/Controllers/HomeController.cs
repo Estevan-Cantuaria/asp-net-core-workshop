@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SalesWebMvc2.Models;
+using SalesWebMvc2.Models.ViewModels;
 
 namespace SalesWebMvc2.Controllers
 {
@@ -17,8 +17,9 @@ namespace SalesWebMvc2.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            ViewData["Message"] = "Aplicação WEB teste desenvolvida para a disciplina de Sistemas Proprietários.";
+            ViewData["Curso"] = "Sistemas para Internet 3º periodo Matutino";
+            ViewData["Professor"] = "Bruno";
             return View();
         }
 
